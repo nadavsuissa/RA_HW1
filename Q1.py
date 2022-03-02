@@ -29,7 +29,7 @@ def safecall(funcarg, **kwargs):
 class Testing(unittest.TestCase):
 
     def test_safecall(self):
-        # Regular Call
+        # Regular Call + Usage
         self.assertEqual(safecall(f, x=8, y=2.0, z=2), 12.0)
         self.assertEqual(safecall(f, x=2, y=2.5, z=2), 6.5)
         # Annotate Abuse - Int is Decimal
